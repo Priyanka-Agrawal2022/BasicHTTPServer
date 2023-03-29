@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Priyanka Agrawal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="./resumestyle.css"> -->
+	<style>
+		body {
+	margin: 0px;
+	font-family: sans-serif;
+    font-size: 30px;
+}
+
+:root {
+	--section-color-blue: #2857a4;
+	/*blue;*/
+}
+
+/*Body Header*/
+
+#body-header {
+	height: 65vh;
+	/*opacity: 0.8;*/
+	background-image: url(https://media.wired.com/photos/621e8c4000c61db612b05fda/master/pass/Gear-Set-Up-Your-Desk-Ergonomically-1315115142.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 50px;
+}
+
+/*Horizontal Lists*/
+
+.horizontal-list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropdown-list ul {
+	margin: 0.2rem;
+	text-align: left;
+	padding: 0 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list {
+	display: block;
+	position: absolute;
+	right: 3%;
+}
+
+.dropdown-list {
+	margin: 0;
+	display: none;
+	background-color: grey;
+	box-shadow: 0px 4px 8px 1px grey;
+}
+
+.dropdown-list li {
+	margin: 0.4rem 0;
+}
+
+.horizontal-list li {
+	display: inline-block;
+    margin: 0px 8px 8px 0px;
+	font-weight: 100;
+	font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+	color: white;
+	text-decoration: none;
+}
+
+.no-list-style {
+	list-style: none;
+}
+
+.no-list-style li {
+	font-weight: 100;
+	font-size: 0.9rem;
+}
+
+.no-list-style li a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-menu li a {
+	transition: color 0.5s border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+	color: lightgrey;
+	border-bottom: 1px solid black;
+}
+
+#bars {
+	color: white;
+	display: none;
+	text-align: right;
+	margin-right: 5%;
+}
+
+#bars i {
+	font-size: 2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*Name & Social Icons*/
+
+#name-social-container {
+	margin-top: 20vh;
+}
+
+#my-name {
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+	padding: 10px;
+	font-size: 1.5rem;
+	border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+	box-shadow: 0px 0px 6px 4px rgba(230, 196,  196, 0.2);
+	/*h-offset v-offset blur spread color*/
+}
+
+/*About Section*/
+
+#about {
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+#my-image {
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+}
+
+#my-image img {
+	height: 100%;
+	width: 100%;
+	border: 3px solid white;
+	border-radius: 50%;
+	box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+	padding: 10px;
+	height: 100%;
+	width: 70%;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+	/*height: 75vh;*/
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(2n) {
+	background-color: #9e9b9b29;
+}
+
+section:nth-child(2n+1) {
+	background-color: white;
+}
+
+/*Common Margin Classes*/
+
+.mb75px {
+	margin-bottom: 75px;
+}
+
+/*Common Color Classes*/
+
+.text-highlight {
+	color: var(--section-color-blue);
+	font-weight: 600;
+}
+
+.mb-blue {
+	background-color: var(--section-color-blue);
+}
+
+.red {
+    background-color: red;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.green {
+    background-color: green;
+}
+
+/*Skills Section*/
+
+.section-heading {
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+
+.section-heading span {
+	font-size: 40px;
+	color: var(--section-color-blue);
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+.skills-display {
+	width: 70%;
+	padding: 10px;
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.skill-progress {
+	width: 11rem;
+	height: 2.2rem;
+	background-color: lightgrey;
+	border-radius: 1rem;
+	margin: 25px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+}
+
+.skill-progress>div {
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+	color: white;
+	font-size: 1rem;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.eighty-five-percent {
+	width: 85%;
+	height: inherit;
+}
+
+.ninety-percent {
+    width: 90%;
+    height: inherit;
+}
+
+.fifty-percent {
+    width: 50%;
+    height: inherit;
+}
+
+/*Portfolio Section*/
+
+#portfolio-display {
+	box-sizing: border-box;
+	width: 75%;
+    padding: 10px;
+    margin: 30px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.portfolio-image-container {
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-image-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0px 0px 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details{
+    background-color: #80808078;
+    color: white;
+}
+
+/*Contact Section*/
+
+#contact {
+	background: linear-gradient(50deg, var(--section-color-blue) 0%, #403066 74%);
+	color: white;
+}
+
+#contact-display {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#contact h1 span {
+	font-size: 40px;
+	color: white;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+.contact-display {
+	display: flex;
+	justify-content: space-around;
+	height: 80%;
+	width: 100%;
+}
+
+.send-message {
+	height: 100%;
+	width: 40%;
+	margin: 0 10%;
+}
+
+.send-message form {
+	display: flex;
+	flex-direction: column;
+}
+
+.send-message form div .text-input{
+	padding: 10px;
+	background-color: transparent;
+	border: transparent;
+	border-bottom: 2px solid white;
+	height: 100%;
+	width: 100%;
+	margin: 10px;
+}
+
+.send-message form div:last-child {
+	border-bottom: 0px;
+}
+
+
+.send-message form div #sub-btn {
+	background: transparent;
+    font-size: 1rem;
+    border: 2px solid white;
+    margin-top: 10%;
+    margin-left: 40%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+.send-message form div #sub-btn:hover {
+	background: white;
+	color: #13386fe0;
+}
+
+.desc {
+	font-size: 1rem;
+	font-family: sans-serif;
+	color: lightgrey;
+}
+
+.icon {
+	font-size: 1rem;
+}
+
+.get-in-touch {
+	height: 100%;
+	width: 40%;
+	margin-right: 10%;
+}
+
+.get-in-touch h6 {
+	margin: 0;
+}
+
+.get-in-touch div {
+	margin: 10px 0;
+}
+
+.bottom-list {
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+
+/*Work Experience Section*/
+
+.timeline {
+	position: relative;
+	width: 75%;
+}
+
+.timeline-box {
+	position: relative;
+	margin: 5px;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+}
+
+.timeline-box header {
+	display: flex;
+	height: 25%;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.header-image {
+	height: 100%;
+	width: 20%;
+}
+
+.timeline-box header .header-image img {
+	height: 80%;
+	width: 80%;
+}
+
+.timeline-box:nth-child(2n) {
+	left: 53%;
+}
+
+.role {
+	margin: 0px;
+	color: blue;
+}
+
+.org {
+	margin: 0px;
+	color: orange;
+}
+
+.start-end {
+	margin: 0px;
+}
+
+.timeline-box p:last-child {
+	font-size: 0.8rem;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	top: 40%;
+	right: -12.5%;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	top: 40%;
+	left: -9.4%;
+	z-index: 1;
+}
+
+.timeline-divider {
+	position: absolute;
+	height: 75%;
+	width: 0px;
+	border: 1px dashed #0096fa6b;
+	top: 9%;
+	left: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-display {
+		flex-wrap: wrap;
+	}
+
+	.send-message {
+		width: 80%;
+		margin: 10%;
+	}
+
+	.get-in-touch {
+		width: 80%;
+		margin: 10%;
+		margin-left: 13%;
+	}
+
+	.timeline-divider {
+		left: 2%;
+	}
+
+	.timeline-box:nth-child(2n) {
+		left: 5%;
+	}
+
+	.timeline-box {
+		width: 90%;
+	}
+
+	.timeline-box::after {
+		left: -5% !important;
+	}
+
+	/*.timeline-box:nth-child(2n+1)::after {
+		left: -5%;
+	}
+
+	.timeline-box:nth-child(2n)::after {
+		left: -5%;
+	}*/
+
+	html {
+		font-size: 15px;
+	}
+}
+
+.timeline-traveller {
+	position: sticky;
+	top: 40%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+@media screen and (max-width: 572px) {
+	#bars {
+		display: block
+	}
+
+	.nav-menu {
+		display: none;
+	}
+}
+	</style>
+	<script src="https://kit.fontawesome.com/1919d78298.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header id="body-header">
+		
+		<nav>
+			<div class="dropdown-menu">
+				<div id="bars">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+
+				<div class="dropdown-list nav-menu">
+					<ul class="no-list-style">
+						<li><a href="#">Home<a/></li>
+						<li><a href="#about">About<a/></li>
+						<li><a href="#skills">Skills<a/></li>
+						<li><a href="#experience">Experience<a/></li>
+						<li><a href="#education">Education<a/></li>
+						<li><a href="#portfolio">Portfolio<a/></li>
+						<li><a href="#contact">Contact<a/></li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="horizontal-list text-center nav-menu">
+				<li><a href="#">Home<a/></li>
+				<li><a href="#about">About<a/></li>
+				<li><a href="#skills">Skills<a/></li>
+				<li><a href="#experience">Experience<a/></li>
+				<li><a href="#education">Education<a/></li>
+				<li><a href="#portfolio">Portfolio<a/></li>
+				<li><a href="#contact">Contact<a/></li>
+			</ul>
+		</nav>
+
+        
+        <div id="name-social-container">
+
+        	<div class="text-center">
+        		<h1 id="my-name">
+            		Priyanka Agrawal
+        		</h1>
+        	</div>
+
+        	<div>
+        		<ul class="horizontal-list text-center social-icons">
+                <li id="linkedin">
+                	<a href="#">
+
+                		<i class="fa-brands fa-linkedin-in"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="stackoverflow">
+                	<a href="#">
+
+                		<i class="fa-brands fa-stack-overflow"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="gmail">
+                	<a href="#">
+
+                		<i class="fa-brands fa-google-plus-g"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="facebook">
+                	<a href="#">
+
+                		<i class="fa-brands fa-facebook-f"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="quora">
+                	<a href="#">
+
+                		<i class="fa-brands fa-quora"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png" /> -->
+                    </a>
+                </li>
+            </ul>
+        	</div>
+
+        </div>
+
+	</header>
+
+	<main>
+		
+		<section id="about">
+			<div id="my-image">
+				<img src="https://media.wired.com/photos/621e8c4000c61db612b05fda/master/pass/Gear-Set-Up-Your-Desk-Ergonomically-1315115142.jpg">
+			</div>
+			<div id="about-para">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and <span class="text-highlight">typesetting industry</span>. Lorem Ipsum has been the industry's standard <span class="text-highlight">dummy text ever</span> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s <span class="text-highlight">with the release of Letraset</span> sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</div>
+			
+		</section>
+
+		<section id="skills">
+			<h1 class="section-heading mb75px text-center">
+				<span>
+					<i class="fa-solid fa-chalkboard-user"></i>
+				</span>
+				<span>SKILLS</span>
+			</h1>
+
+				<div id="skills-container" class="skills-display">
+
+					<div class="skill-progress">
+						<div class="eighty-five-percent mb-blue" data-bar-width="85">
+							<div class="skill-name">
+								<span>C++</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="skill-progress">
+						<div class="ninety-percent red" data-bar-width="90">
+							<div class="skill-name">
+								<span>HTML</span>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="skill-progress">
+						<div class="ninety-percent brown" data-bar-width="90">
+							<div class="skill-name">
+								<span>CSS</span>
+							</div>
+						</div>
+                    </div>
+                    
+                    <div class="skill-progress">
+						<div class="fifty-percent green" data-bar-width="50">
+							<div class="skill-name">
+								<span>JavaScript</span>
+							</div>
+						</div>
+					</div>
+					
+                    <div class="skill-progress">
+						<div class="eighty-five-percent mb-blue" data-bar-width="85">
+							<div class="skill-name">
+								<span>NodeJs<span>
+							</div>
+						</div>
+					</div>
+                            
+                    <div class="skill-progress">
+						<div class="ninety-percent brown" data-bar-width="90">
+							<div class="skill-name">
+								<span>MongoDB</span>
+							</div>
+						</div>
+                    </div>
+
+				</div>
+		</section>
+
+		<section id="experience">
+
+			<h1 class="section-heading mb75px">
+				<span>
+					<i class="fa-solid fa-briefcase"></i>
+				</span>
+				<span>Work Experience</span>
+			</h1>
+
+			<div class="timeline">
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="./static/CNLogo.png" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">Founding Member</h4>
+							<p class="org">Coding Ninjas</p>
+							<p class="start-end">May 2015 - May 2016</p>
+						</div>
+					</header>
+					
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">Founding Member</h4>
+							<p class="org">Coding Ninjas</p>
+							<p class="start-end">May 2015 - May 2016</p>
+						</div>
+					</header>
+
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">Founding Member</h4>
+							<p class="org">Coding Ninjas</p>
+							<p class="start-end">May 2015 - May 2016</p>
+						</div>		
+					</header>
+
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">Founding Member</h4>
+							<p class="org">Coding Ninjas</p>
+							<p class="start-end">May 2015 - May 2016</p>
+						</div>
+					</header>
+
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+
+				<div class="timeline-divider">
+					<div class="timeline-traveller">
+						<i class="fa-solid fa-plane"></i>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="education">
+			<h1 class="section-heading mb75px">
+				<span>
+					<i class="fa-solid fa-graduation-cap"></i>
+				</span>
+				<span>Education</span>
+			</h1>
+
+			<div class="timeline">
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">B.E.</h4>
+							<p class="org">I.E.T. D.A.V.V.</p>
+							<p class="start-end">2016 - 2020</p>
+						</div>
+					</header>
+					
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">B.E.</h4>
+							<p class="org">I.E.T. D.A.V.V.</p>
+							<p class="start-end">2016 - 2020</p>
+						</div>
+					</header>
+					
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">B.E.</h4>
+							<p class="org">I.E.T. D.A.V.V.</p>
+							<p class="start-end">2016 - 2020</p>
+						</div>		
+					</header>
+
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+				<div class="timeline-box">
+					<header>
+						<div class="header-image">
+							<img src="https://play-lh.googleusercontent.com/3bqfon59hQmaZjUFSXc-yK7MaIPzSNQAM2v8MQLKpIu9scf58pOpGSHWXUZRhJI_5jQ" alt="CNLogo">
+						</div>
+						<div class="description">			
+							<h4 class="role">B.E.</h4>
+							<p class="org">I.E.T. D.A.V.V.</p>
+							<p class="start-end">2016 - 2020</p>
+						</div>
+					</header>
+
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+
+				<div class="timeline-divider">
+					<div class="timeline-traveller">
+						<i class="fa-solid fa-plane"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<h1 class="section-heading mb75px text-center">
+				<span>
+					<i class="fa-solid fa-list"></i>
+				</span>
+				<span>Portfolio</span>
+			</h1>
+            
+            <div id="portfolio-display">
+                
+                <div class="portfolio-image-container">
+					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+					<div class="portfolio-details">
+                    	<p>Write here basic details about the project.</p>
+                	</div>
+				</div>
+                
+                <div class="portfolio-image-container">
+					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+					<div class="portfolio-details">
+						<p>Write here basic details about the project.</p>
+                	</div>
+				</div>
+                
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                    	<p>Write here basic details about the project.</p>
+                	</div>
+                </div>
+
+                <div class="portfolio-image-container">
+					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+					<div class="portfolio-details">
+                    	<p>Write here basic details about the project.</p>
+                	</div>
+                </div>
+            
+                <div class="portfolio-image-container">
+					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+					<div class="portfolio-details">
+                    	<p>Write here basic details about the project.</p>
+                	</div>
+                </div>
+                
+                <div class="portfolio-image-container">
+					<img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+					<div class="portfolio-details">
+                    	<p>Write here basic details about the project.</p>
+                	</div>
+                </div>
+             
+            </div>
+		</section>
+		
+		<section id="contact">
+			<h1 class="section-heading text-center">
+				<span>
+					<i class="fa-regular fa-address-card"></i>
+				</span>
+				<span>Contact</span>
+			</h1>
+
+			<div class="contact-display">
+				
+				<div class="send-message">
+					<form id="contact-form" action="">
+						<div><input class="text-input" type="text" name="name" placeholder="Your Name" required></div>
+
+						<div><input class="text-input" type="email" name="email" placeholder="Your Email" required></div>
+
+						<div><textarea class="text-input" placeholder="Message"></textarea></div>
+
+						<div><input id="sub-btn" type="submit" name="send" value="SEND MESSAGE"></div>
+					</form>
+				</div>
+
+				<div class="get-in-touch">
+					<h6>Get In touch</h6>
+					<p class="desc">
+						Loreum Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.
+					</p>
+
+					<h6>My Address</h6>
+					<div>
+						<span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+						<span class="desc">Shivpuri, Madhya Pradesh</span>
+					</div>
+					<div>
+						<span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+						<span class="desc">9999999999</span>
+					</div>
+					<div>
+						<span class="icon"><i class="fa-regular fa-envelope"></i></span>
+						<span class="desc">myemail@gmail.com</span>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div>
+        		<ul class="horizontal-list text-center social-icons bottom-list">
+                <li id="linkedin">
+                	<a href="#">
+
+                		<i class="fa-brands fa-linkedin-in"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="stackoverflow">
+                	<a href="#">
+
+                		<i class="fa-brands fa-stack-overflow"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="gmail">
+                	<a href="#">
+
+                		<i class="fa-brands fa-google-plus-g"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="facebook">
+                	<a href="#">
+
+                		<i class="fa-brands fa-facebook-f"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" /> -->
+                    </a>
+                </li>
+                <li id="quora">
+                	<a href="#">
+
+                		<i class="fa-brands fa-quora"></i>
+
+                    	<!-- <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png" /> -->
+                    </a>
+                </li>
+            </ul>
+        	</div>
+
+		</section>
+
+	</main>
+
+	<script type="text/javascript">
+		//Smooth Scroll
+
+var navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
+var interval;
+
+for(var i=0; i<navMenuAnchorTags.length; i++) {
+    navMenuAnchorTags[i].addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var targetSectionID = this.textContent.trim().toLowerCase();
+        var targetSection = document.getElementById(targetSectionID);
+        
+        // interval = setInterval(scrollVertically, 20, targetSection);
+        interval = setInterval(function() {
+            scrollVertically(targetSection);
+        }, 20);
+    });
+}
+
+function scrollVertically(targetSection) {
+    var targetSectionCoordinates = targetSection.getBoundingClientRect();
+
+    if(targetSectionCoordinates.top <= 0) {
+        clearInterval(interval);
+        return;
+    }
+
+    window.scrollBy(0, 50);
+}
+
+//Skill Bar Animation
+//Handle scroll event on window
+//Check if skills section container is visible
+//Ensure that initial width of colored skill divs is 0 -> Initialized/Reset to 0
+//Start animation on every skill -> Increase skill width from 0 to skill level at regular intervals
+//Store skill level -> HTML with the help of data attribute
+
+var progressBars = document.querySelectorAll('.skill-progress > div');
+var skillsContainer = document.getElementById('skills-container');
+var animationDone = false;
+//window.addEventListener('scroll', checkScroll);
+window.addEventListener('scroll', checkScrollIndividual);
+
+function initializeBars() {
+    for( let bar of progressBars) {
+        bar.style.width = 0 + '%';
+    }
+}
+
+initializeBars();
+
+function fillBars() {
+    for(let bar of progressBars) {
+        let targetWidth = bar.getAttribute('data-bar-width');
+        let currentWidth = 0;
+        let interval = setInterval(function() {
+            if(currentWidth > targetWidth) {
+                clearInterval(interval);
+                return;
+            }
+
+            currentWidth++;
+            bar.style.width = currentWidth + '%';
+        }, 3);
+    }
+}
+
+function fillIndividualBar(bar) {
+    let targetWidth = bar.getAttribute('data-bar-width');
+    let currentWidth = 0;
+    let interval = setInterval(function() {
+        if(currentWidth > targetWidth) {
+                clearInterval(interval);
+                return;
+        }
+
+        currentWidth++;
+        bar.style.width = currentWidth + '%';
+    }, 5);
+}
+
+
+//For complete skills section
+function checkScroll() {
+    //Check whether skills section container is visible
+    var coordinates = skillsContainer.getBoundingClientRect();
+
+    if(!animationDone && coordinates.top <= window.innerHeight) {
+        fillBars();
+        animationDone = true;
+    }
+    else if(coordinates.top > window.innerHeight) {
+        animationDone = false;
+        initializeBars();
+    }
+}
+
+//For individual skill bar
+function checkScrollIndividual() {
+    //Check whether individual skill bar is visible
+    for(let bar of progressBars) {
+        let coordinates = bar.getBoundingClientRect();
+    
+        if(!animationDone && coordinates.top <= window.innerHeight) {
+            fillIndividualBar(bar);
+            //animationDone = true;
+        }
+        // else if(coordinates.top > window.innerHeight) {
+        //     animationDone = false;
+        // }
+        else if(skillsContainer.getBoundingClientRect().top > window.innerHeight) {
+            animationDone = false;
+            initializeBars();
+        }
+    } 
+}
+	</script>
+</body>
+</html>
